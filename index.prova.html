@@ -1,123 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prova</title>
+    <title>Página Mobile</title>
     <style>
-        
-        #topBox {
-            border: 10px solid #b90e0a;
-            height: 200px;
-            width: 544px;
-            margin: 50px;
-            border-radius: 10px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #800000;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
-
-        #BottomBox {
-            width: 894px;
-            height: 271px;
-            border: 10px solid #a91b0b;
-            border-radius: 10px;
-            margin: 70px;
+        .profile-container {
+            position: relative;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center
         }
-
-        .Circle {
+        .profile-picture {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            background-color: #990f02;
-            background: url(https://i.pinimg.com/564x/97/32/11/97321181a8a453ea7b1fcca1ad3d6032.jpg);
-            background-position: 90%;
-            background-size: cover;
-            background-repeat: no-repeat;
+            border: 5px solid #f7f7f7;
+            object-fit: cover;
+            margin-right: 20px; 
         }
-
-        .Alinhar {
+        .kiss-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+        }
+        .description {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .feed {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
         }
-
-        .Alinhar0 {
-            display: flex;
-            flex-direction: column;
-            justify-content: right;
-            align-items: end;
-        }
-
-        .Alinhar1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: start;
-        }
-
-        .Alinhar2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: right;
-            align-items: end;
-        }
-
-        .box1 {
-            width: 285px;
-            height: 255px;
-            background: #e73461;
-            background: url(https://i.pinimg.com/236x/c2/3d/1f/c23d1f56357aba2564e8eef406018db7.jpg);
-            background-position: 50% 50%;
-            background-size: cover;
-            background-repeat: no-repeat;
+        .feed-item {
+            width: 300px;
+            height: 200px;
+            background-color: #708238;
+            border: 5px solid #708238;
             border-radius: 10px;
-            margin: 10px;
+            overflow: hidden;
         }
-
-        .box2 {
-            width: 285px;
-            height: 255px;
-            background: #e73461;
-            background: url(https://i.pinimg.com/236x/c2/3d/1f/c23d1f56357aba2564e8eef406018db7.jpg);
-            background-position: 50% 50%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            margin: 10px;
+        .feed-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-
-        .box3 {
-            width: 285px;
-            height: 255px;
-            background: #e73461;
-            background: url(https://i.pinimg.com/236x/c2/3d/1f/c23d1f56357aba2564e8eef406018db7.jpg);
-            background-position: 50% 50%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            margin: 10px;
-        }
-        </style>
+    </style>
 </head>
-
-<body style="background-color: #7b9467">
-    <div class="Alinhar">
-    <div id="topBox">
-<div class="Circle"></div><div class="Alinhar0"><h1>Riane Neves</h1><p>Student</p></div>
-   </div>
-</div>
-
-<div class="Alinhar">
-   <div id="BottomBox">
-
-    <div>
-        <div id="box1"></div>
-        <div class="box2"></div>
+<body>
+    <div class="profile-container">
+        <img src="./WhatsApp Image 2024-09-18 at 14.10.49.jpeg" alt="Foto de Perfil" class="profile-picture">
+        <div class="description">(riane's version)
+            rianenevess
+            all smiles?
+            📸🌪️💋</div>
+        <img src="./beijo.png" alt="Ícone de Beijo" class="kiss-icon">
     </div>
-    <div>>
-        <div class="box3"></div>
+    <div class="feed">
+        <div class="feed-item">
+            <img src="./IMG 1 RIRI.jfif" alt="Imagem 1">
+        </div>
+        <div class="feed-item">
+            <img src="./WhatsApp Image 2024-09-18 at 13.16.20 (1).jpeg" alt="Imagem 2">
+        </div>
+        <div class="feed-item">
+            <img src="./WhatsApp Image 2024-09-18 at 13.16.20.jpeg" alt="Imagem 3">
+        </div>
     </div>
-
-</div>
-</div>
 </body>
+</html>
