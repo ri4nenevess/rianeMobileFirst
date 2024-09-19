@@ -6,9 +6,9 @@
     <title>prova</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             background-color: #800000;
             color: white;
-            margin: 0;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -19,7 +19,7 @@
             position: relative;
             margin-bottom: 20px;
             display: flex;
-            align-items: center
+            align-items: center;
         }
         .profilephoto {
             width: 200px;
@@ -28,13 +28,6 @@
             border: 5px solid #708238;
             object-fit: cover;
             margin-right: 20px; 
-        }
-        .kiss {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 60px;
-            height: 60px;
         }
         .description {
             margin-top: 10px;
@@ -48,36 +41,47 @@
         }
         .feed-item {
             width: 300px;
-            height: 200px;
+            height: 240px; 
             background-color: #708238;
             border: 5px solid #708238;
             border-radius: 10px;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
         }
         .feed-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+        .caption {
+            background-color: black; 
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <div class="profilecontainer">
-        <img src="C:\Users\Alunos\Downloads\fotoR.jpg" class="profilephoto">
-        <div class="description">(riane's version)
+        <img src="https://i.pinimg.com/474x/d9/14/5b/d9145b42c37d112402df6d2e62d6b94c.jpg" class="profilephoto">
+        <div class="description">
             all smiles?
             📸🌪️💋</div>
-        <img src="C:\Users\Alunos\Downloads\beijoR-removebg-preview.png" class="kiss">
     </div>
     <div class="feed">
         <div class="feed-item">
-            <img src="https://i.pinimg.com/236x/82/98/3d/82983db9981ae48ef2e984fa70f95417.jpg">
-        </div>
-        <div class="feed-item">
             <img src="https://i.pinimg.com/564x/3c/a2/7d/3ca27dee162fea4ce044123ba386b2aa.jpg">
+            <div class="caption">i love fashion!</div>
         </div>
         <div class="feed-item">
-            <img src="https://i.pinimg.com/736x/af/31/29/af3129f956c221b3fe027cfe7c5af91b.jpg">
+            <img src="https://i.pinimg.com/236x/04/59/10/0459104e0421719c3e81f51c729adb9b.jpg">
+            <div class="caption">i play guitar!</div>
+        </div>
+        <div class="feed-item">
+            <img src="https://i.pinimg.com/564x/b0/d4/dc/b0d4dc97b1aeb7d28d6f5979c8af8fe5.jpg">
+            <div class="caption">i love art!</div>
         </div>
     </div>
 </body>
